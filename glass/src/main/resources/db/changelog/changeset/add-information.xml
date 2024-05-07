@@ -1,0 +1,282 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="1" author="Lyly">
+        <insert tableName="category">
+            <column name="id" value="1"/>
+            <column name="name" value="Листовое стекло"/>
+            <column name="description" value="В настоящий момент изготовление листового стекла
+            производится методом флоат-процесса на немецком технологическом оборудовании. "/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" value="2"/>
+            <column name="name" value="Энергосберегающее стекло"/>
+            <column name="description" value="Энергосберегающее стекло - это стекло, на поверхность которого путем
+             магнетронного напыления нанесено специальное
+            покрытие из полупроводниковых окислов металлов или цветных металлов.  "/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" value="3"/>
+            <column name="name" value="Ламинированное стекло"/>
+            <column name="description" value="Процесс ламинирования представляет собой соединение
+            между собой двух и более листов стекла склеивающей поливинилбутиральной плёнкой под воздействием
+            высокой температуры и давления в автоклаве. "/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" value="4"/>
+            <column name="name" value="Солнцезащитное стекло"/>
+            <column name="description" value="Солнцезащитное стекло - это стекло, на поверхность которого путем магнетронного напыления нанесено
+            специальное покрытие, которое отражает избыточное солнечное тепло."/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" value="5"/>
+            <column name="name" value="Закаленное стекло"/>
+            <column name="description" value="Закаленное стекло представляет собой листовое стекло, подвергнутое специальной термической обработке, в результате которой обеспечивается повышенная
+             механическая прочность, термостойкость и безопасность при разрушении."/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" value="6"/>
+            <column name="name" value="Транспортные стеклопакеты"/>
+            <column name="description" value="Применение теплой TPS-рамки в совокупности со специальным стеклом обеспечивает выход продукта, соответствующего всем требованиям,
+            предъявляемым к современным конструкциям в транспорте."/>
+        </insert>
+
+        <insert tableName="category">
+            <column name="id" value="7"/>
+            <column name="name" value="TPS-стеклопакеты"/>
+            <column name="description" value="TPS – это технология производства стеклопакетов, разработанная
+            немецкой фирмой LENHARDT MASCHINENBAU GMBH."/>
+        </insert>
+
+
+        <insert tableName="client">
+            <column name="id" value="1"/>
+            <column name="name" value="Тимофей"/>
+            <column name="surname" value="Аникин"/>
+            <column name="phone" value="+132577855"/>
+            <column name="address" value="Тульская область"/>
+
+        </insert>
+        <insert tableName="client">
+            <column name="id" value="2"/>
+            <column name="name" value="Илья"/>
+            <column name="surname" value="Гришин"/>
+            <column name="phone" value="+324578954"/>
+            <column name="address" value="Смоленская область, город Егорьевск, спуск Чехова, 11"/>
+
+        </insert>
+        <insert tableName="client">
+            <column name="id" value="3"/>
+            <column name="name" value="Вадим"/>
+            <column name="surname" value="Данилов"/>
+            <column name="phone" value="+57884555"/>
+            <column name="address" value="Курганская область, город Клин, пр. 1905 года, 00"/>
+
+        </insert>
+        <insert tableName="client">
+            <column name="id" value="4"/>
+            <column name="name" value="Елизавета"/>
+            <column name="surname" value="Малышева"/>
+            <column name="phone" value="+578846878"/>
+            <column name="address" value="Липецкая область, город Сергиев Посад, пр. Ломоносова, 97"/>
+
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="5"/>
+            <column name="name" value="Анна"/>
+            <column name="surname" value="Анохина"/>
+            <column name="phone" value="+78458878"/>
+            <column name="address" value="Шымкент облысы, Қарағанды қаласы, Гоголь даңғылы, 375"/>
+
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="6"/>
+            <column name="name" value="Роман"/>
+            <column name="surname" value="Любимов"/>
+            <column name="phone" value="+532478"/>
+            <column name="address" value="Қостанай облысы, Тараз қаласы, Абай көшесі, 112"/>
+
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="7"/>
+            <column name="name" value="Валерия"/>
+            <column name="surname" value="Костина"/>
+            <column name="phone" value="+7854594"/>
+            <column name="address" value="Қарағанды облысы, Маңғыстау қаласы, Абай көшесі, 336"/>
+
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="8"/>
+            <column name="name" value="Александра"/>
+            <column name="surname" value="Пастухова"/>
+            <column name="phone" value="+4754686"/>
+            <column name="address" value="Алматы облысы, Қарағанды қаласы, Достық көшесі, 040"/>
+
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="9"/>
+            <column name="name" value="Святослав"/>
+            <column name="surname" value="Сидоров"/>
+            <column name="phone" value="+78546956"/>
+            <column name="address" value="Калининградская область, город Луховицы, пер. Бухарестская, 93"/>
+        </insert>
+
+        <insert tableName="client">
+            <column name="id" value="10"/>
+            <column name="name" value="Олеся"/>
+            <column name="surname" value="Захаровв"/>
+            <column name="phone" value="+8547896"/>
+            <column name="address" value="Архангельская область, город Дорохово, пр. Славы, 36"/>
+        </insert>
+
+
+        <insert tableName="orders">
+            <column name="id" value="1"/>
+            <column name="count" value="1000"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="2"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="2"/>
+            <column name="count" value="900"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="1"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="3"/>
+            <column name="count" value="1070"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="3"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="4"/>
+            <column name="count" value="3251"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="4"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="5"/>
+            <column name="count" value="478"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="5"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="6"/>
+            <column name="count" value="7854"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="6"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="7"/>
+            <column name="count" value="8740"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="9"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="8"/>
+            <column name="count" value="5478"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="7"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="9"/>
+            <column name="count" value="7014"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="10"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="id" value="10"/>
+            <column name="count" value="2145"/>
+            <column name="order_date" value="2023-07-11"/>
+            <column name="client_id" value="8"/>
+        </insert>
+
+
+        <insert tableName="product">
+            <column name="id" value="1"/>
+            <column name="name" value="Листовое стекло"/>
+            <column name="description" value="В настоящий момент изготовление листового стекла производится
+            методом флоат-процесса на немецком технологическом оборудовании. Для ОАО «Гомельстекло» это уже второе
+             технологическое поколение флоат-процесса являющегося сегодня наиболее
+             эффективным и качественным в отношении производства листового стекла."/>
+            <column name="characteristic" value="Бесцветность, прозрачность, прочность, химическая стойкость,тепло- и звукоизоляция,
+                возможности декоративного оформления, устойчивость к высоким и низким температурам, легкость установки и обслуживания"/>
+            <column name="price" value="200"/>
+            <column name="order_id" value="4"/>
+            <column name="category_id" value="1"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="id" value="2"/>
+            <column name="name" value="Энергосберегающее стекло (Emicon cristal)"/>
+            <column name="description" value=" За счет явлений интерференции и электропроводимости стекло с таким
+             покрытием отражает тепловые волны
+             в инфракрасном диапазоне, что позволяет существенно сократить теплопотери помещения."/>
+            <column name="characteristic" value="Теплоизоляция, солнцезащита, звукоизоляция, улучшенная безопасность"/>
+            <column name="price" value="500"/>
+            <column name="order_id" value="3"/>
+            <column name="category_id" value="2"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" value="3"/>
+            <column name="name" value="Ламинированное стекло (Lamicon cristal)"/>
+            <column name="description" value="Стилевой облик современных сооружений невозможно представить
+             без использования стекла в качестве строительного материала. Современная архитектура требует установки
+             специально разработанных
+             безопасных высокотехнологичных стекол. Таким решением является использование ламинированного стекла (триплекс)."/>
+            <column name="characteristic" value="Защита от ультрафиолетового излучения, безопасность, улучшенная звукоизоляция, улучшенная теплоизоляция"/>
+            <column name="price" value="150"/>
+            <column name="order_id" value="2"/>
+            <column name="category_id" value="3"/>
+        </insert>
+
+        <insert tableName="product">
+                 <column name="id" value="4"/>
+                 <column name="name" value="Солнцезащитное стекло (Emicon Sun)"/>
+                 <column name="description" value="Технология производства позволяет придавать стеклу различные цветовые оттенки и степень зеркальности."/>
+                 <column name="characteristic" value="Защита от ультрафиолетового излучения, фильтрация солнечной энергии, теплоизоляция, контроль освещенности, эстетический вид"/>
+                 <column name="price" value="190"/>
+                 <column name="order_id" value="5"/>
+                 <column name="category_id" value="4"/>
+         </insert>
+        <insert tableName="product">
+            <column name="id" value="5"/>
+            <column name="name" value="Закаленное стекло"/>
+            <column name="description" value="Закаленное стекло - это тип стекла, которое прошло процесс термической
+            обработки, при которой оно нагревается до высокой температуры, а затем быстро охлаждается.
+             Этот процесс придает стеклу особые механические и термические свойства. "/>
+            <column name="characteristic" value="Высокая прочность, устойчивость к термическому шоку, безопасность, химическая стойкость, улучшенная теплоизоляция"/>
+            <column name="price" value="207"/>
+            <column name="order_id" value="6"/>
+            <column name="category_id" value="5"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" value="6"/>
+            <column name="name" value="Транспортные стеклопакеты"/>
+            <column name="description" value="Транспортные стеклопакеты (ТСП) - это стеклопакеты,
+            специально разработанные для использования в автомобилях и других транспортных средствах.
+            Они состоят из двух или более стекол, разделенных
+             между собой специальными прокладками и заполненных воздухом или инертным газом, таким как аргон или криптон."/>
+            <column name="characteristic" value="Акустическая изоляция, устойчивость к воздействию UV-лучей, безопасность, химическая стойкость, улучшенная теплоизоляция"/>
+            <column name="price" value="107"/>
+            <column name="order_id" value="7"/>
+            <column name="category_id" value="6"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="id" value="7"/>
+            <column name="name" value="TPS-стеклопакеты"/>
+            <column name="description" value="Т Эта технология в корне отличается от привычных
+             производственных систем. Из её названия следует, что при изготовлении стеклопакетов вместо привычных
+            металлических дистанционных рамок используется упругий термопластичный материал."/>
+            <column name="characteristic" value="Уменьшение конденсации,звукоизоляция, безопасность, улучшенная теплоизоляция"/>
+            <column name="price" value="199"/>
+            <column name="order_id" value="9"/>
+            <column name="category_id" value="7"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
